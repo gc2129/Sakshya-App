@@ -1,0 +1,18 @@
+{
+  "name": "sakshya-app-monorepo",
+  "version": "1.0.0",
+  "description": "Sakshya Forensic Platform Monorepo",
+  "main": "index.js",
+  "scripts": {
+    "server": "cd server && node index.js",
+    "client": "cd client && npm run dev",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "allowScripts": {
+    "core-js": true,
+    "sqlite3": true
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
